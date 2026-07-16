@@ -32,7 +32,7 @@ cask "orchard-cli" do
     skip "Auto-generated on release."
   end
 
-  binary "orchard-cli"
+  binary "orchard"
 
   postflight do
     if system_command("/usr/bin/xattr", args: ["-h"]).exit_status == 0
